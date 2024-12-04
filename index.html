@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+  <style>
+body{
+font-family: Arial, sans-serif;
+width: 1000px;
+margin-left: auto;
+margin-right: auto;
+}
+form img{
+  width: 175px;
+}
+/* CSS ajuste form */
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(223, 223, 223);
+  padding: 50px 30px 0px 40px;
+  margin-left: 510px;
+  margin-top: -600px;
+  margin-right: 115px;
+  margin-bottom: 30px;
+  text-align: center;
+  flex-direction: column;
+}
+#pass2{
+  margin-top: -20px;
+}
+/* INPUT email/senha */
+form input{
+  size: 10px;
+  width: 240px;
+  height: 30px;
+  border: 1px solid rgb(209, 202, 202);
+  border-radius: 2px;
+  margin-top: 20px;
+  
+}
+form input + input {
+  margin-top: 5px; /* Adiciona um espaço apenas entre inputs */
+}
+/* CSS - Botão Entrar */
+#btn{
+  border-color: #70bdf5;
+  align-items: center;
+  color: white;
+  background-color: #70bdf5;
+  border-radius: 10px;
+  width: 245px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form div hr{
+  width: 100px;
+}
+form div{
+  margin: 10px;
+  font-weight: bold;
+}
+form div a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Foto Facebook */
+button, button a{ 
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  margin-top: 20px;
+  font-weight: bold;
+}
+#facebook{
+
+  background-repeat: no-repeat;
+  width: 20px;
+  margin-right: 8px;
+  margin-top: 3px;
+  
+}
+
+#cadastra{
+  text-align: center;
+  border: 1px solid rgb(209, 202, 202);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 510px;
+  margin-right: 115px;
+  margin-top: -20px;
+  font-size: 14px;
+
+}
+div h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+
+}
+div h4 a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #70bdf5;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+aside a{  
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+footer{
+  float: bottom;
+  text-align: center;
+  display: flex;
+}
+footer p a{
+  text-decoration: none;
+  margin: 10px;
+  size: 2px;
+}
+
+
+figure div img{
+  position: relative;
+  left: 73px;
+  top: 20px;
+}
+
+p img{
+  position: relative;
+  background-repeat: no-repeat;
+  width: 130px;
+  float: right;
+  top: 30px;
+  left: -190px;
+}
+
+footer{
+  position: relative;
+  float: center;
+  top: 170px;
+}
+/* width - largura
+heidht - altura */
+  </style>
+  </head>
+  <body>
+
+    <figure>
+      <div><img src="foto-home.png"></div>
+     </figure>
+
+ <form>
+  <img src="instagram-logo.png" alt="instagram">
+    <p>
+    <input type="text" name="senha" id="pass1" placeholder="Telefone, nome de usuário ou email"></input>
+    </p>
+    <p>
+    <input type="password" name="senha" id="pass2" placeholder="Senha"></input>
+    <br><br>
+    <input type="submit" value="Entrar" id="btn" />
+    </p>
+    <div> <hr> OU <hr> </div>
+    <button><a href="https://www.facebook.com/"><img src="facebook.png" id="facebook">Entrar com o Facebook</a></button>
+    <br><br>
+    <aside><a href="https://www.instagram.com/accounts/password/reset/">Esqueceu a Senha?</a></aside>
+ </form>
+ <div id=""></div>
+ <div id="cadastra">
+  <h4>Não tem uma conta? <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a></h4>
+ </div>
+
+ <p id="google">
+  <img src="google-play.png">
+ </p>
+ <p id="microsoft">
+  <img src="microsoft.png">
+ </p>
+
+ <footer>
+  <p><a href="https://about.meta.com/">Meta</a></p>
+  <p><a href="https://about.meta.com/">Blog</a></p>
+  <p><a href="https://about.meta.com/">Carreiras</a></p>
+  <p><a href="https://about.meta.com/">Ajuda</a></p>
+  <p><a href="https://about.meta.com/">API</a></p>
+  <p><a href="https://about.meta.com/">Privacidade</a></p>
+  <p><a href="https://about.meta.com/">Termos</a></p>
+  <p><a href="https://about.meta.com/">Localizações</a></p>
+  <p><a href="https://about.meta.com/">Instagram Lite</a></p>
+  <p><a href="https://about.meta.com/">Threads</a></p>
+  <p><a href="https://about.meta.com/">Carregamento de contatos e não usuários</a></p>
+  <p><a href="https://about.meta.com/">Meta Verified</a></p>
+  <p><a href="https://about.meta.com/">Português (Brasil)</a></p>
+ </footer>
+  </body>
+</html>
+
+
+<!-- Meta
+Sobre
+Blog
+Carreiras
+Ajuda
+API
+Privacidade
+Termos
+Localizações
+Instagram Lite
+Threads
+Carregamento de contatos e não usuários
+Meta Verified
+Português (Brasil)
+
+Português (Brasil)
+© 2024 Instagram from Meta -->

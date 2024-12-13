@@ -16,10 +16,12 @@ form img{
 }
 /* CSS ajuste form */
 form {
+  position: relative;
+  top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid rgb(223, 223, 223);
   padding: 50px 30px 0px 40px;
-  margin-left: 510px;
+  margin-left: 530px;
   margin-top: -600px;
   margin-right: 115px;
   margin-bottom: 30px;
@@ -31,10 +33,11 @@ form {
 }
 /* INPUT email/senha */
 form input{
+  font-size: 11px;
   size: 10px;
-  width: 240px;
-  height: 30px;
-  border: 1px solid rgb(209, 202, 202);
+  width: 270px;
+  height: 35px;
+  border: 1px solid rgb(231, 225, 225);
   border-radius: 2px;
   margin-top: 20px;
   
@@ -44,12 +47,16 @@ form input + input {
 }
 /* CSS - Botão Entrar */
 #btn{
+  position: relative;
   border-color: #70bdf5;
   align-items: center;
   color: white;
-  background-color: #70bdf5;
-  border-radius: 10px;
-  width: 245px;
+  background-color: #57b6fa;
+  border-radius: 8px;
+  width: 280px;
+  height: 34px;
+  bottom: 20px;
+  font-size: 12px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,26 +64,58 @@ form input + input {
 form div hr{
   width: 100px;
 }
+
 form div{
   margin: 10px;
   font-weight: bold;
+  font-size: 12px;
+  color: rgb(114, 112, 112);
+  position: relative;
+  top: 15px;
 }
+
+
+/*     <img id="imageou" src="hr.png">
+    <img id="imageoe" src="hr.png"> */
+
 form div a{
+  position: relative;
+  bottom: 42px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+.hr1{
+  width: 114px;
+  position: relative;
+  right: 80px;
+  bottom: 22px;
+}
+.hr2{
+  width: 114px;
+  position: relative;
+  left: 80px;
+  bottom: 30px;
+  border-color: 2px solid rgb(231, 225, 225);
 }
 
 /* Foto Facebook */
-button, button a{ 
+button, button a{
+  color: #51a7e6;
+  font-weight: bold;
+  position: relative;
+  bottom: 15px;
   text-decoration: none;
   border: none;
   background-color: transparent;
   margin-top: 20px;
-  font-weight: bold;
+
 }
 #facebook{
-
+  border-radius: 100px;
+  position: relative;
+  top: 3px;
   background-repeat: no-repeat;
   width: 20px;
   margin-right: 8px;
@@ -85,8 +124,10 @@ button, button a{
 }
 
 #cadastra{
+  position: relative;
+  top: 20px;
   text-align: center;
-  border: 1px solid rgb(209, 202, 202);
+  border: 1px solid rgb(231, 225, 225);
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 510px;
   margin-right: 115px;
@@ -106,8 +147,11 @@ div h4 a{
   font-weight: bold;
 
 }
-aside a{  
-  font-size: 14px;
+aside a{ 
+  position: relative;
+  bottom: 30px;
+  right: 6px;
+  font-size: 13px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
@@ -137,14 +181,41 @@ p img{
   background-repeat: no-repeat;
   width: 130px;
   float: right;
-  top: 30px;
-  left: -190px;
+  top: 50px;
+  right: 30px;
+}
+
+
+.app{
+  font-size: 15px;
+  float: right;
+  position: relative;
+  top: 35px;
+  right: 220px;
 }
 
 footer{
+  text-align: justify;
   position: relative;
-  float: center;
-  top: 170px;
+  top: 130px;
+  left: 20px;
+  font-size: 12px;
+  width: 1000px;
+}
+footer p a{
+  color: rgb(119, 118, 118);
+  padding: 0px;
+}
+
+footer p a:hover{
+  border-bottom: 1px solid rgb(119, 118, 118);;
+}
+
+footer div p a{
+  text-align: justify;
+  position: relative;
+  right: 300px;
+  top: 20px;
 }
 /* width - largura
 heidht - altura */
@@ -159,28 +230,33 @@ heidht - altura */
  <form>
   <img src="instagram-logo.png" alt="instagram">
     <p>
-    <input type="text" name="senha" id="pass1" placeholder="Telefone, nome de usuário ou email"></input>
+    <input type="text" name="senha" id="pass1" placeholder=" Telefone, nome de usuário ou email"></input>
     </p>
     <p>
-    <input type="password" name="senha" id="pass2" placeholder="Senha"></input>
+    <input type="password" name="senha" id="pass2" placeholder=" Senha"></input>
     <br><br>
     <input type="submit" value="Entrar" id="btn" />
     </p>
-    <div> <hr> OU <hr> </div>
+    <div><hr id="hr1" class="hr1"><hr id="hr2" class="hr2">
+      <a>OU</a>
+    </div>
+    <!-- OU -->
     <button><a href="https://www.facebook.com/"><img src="facebook.png" id="facebook">Entrar com o Facebook</a></button>
     <br><br>
     <aside><a href="https://www.instagram.com/accounts/password/reset/">Esqueceu a Senha?</a></aside>
  </form>
- <div id=""></div>
  <div id="cadastra">
   <h4>Não tem uma conta? <a href="https://www.instagram.com/accounts/emailsignup/">Cadastre-se</a></h4>
  </div>
+ <div class="app">
+  <a> Obtenha o aplicativo.</a>
+ </div>
 
- <p id="google">
-  <img src="google-play.png">
- </p>
  <p id="microsoft">
   <img src="microsoft.png">
+ </p>
+ <p class="google">
+  <img src="google-play.png">
  </p>
 
  <footer>
@@ -195,27 +271,11 @@ heidht - altura */
   <p><a href="https://about.meta.com/">Instagram Lite</a></p>
   <p><a href="https://about.meta.com/">Threads</a></p>
   <p><a href="https://about.meta.com/">Carregamento de contatos e não usuários</a></p>
-  <p><a href="https://about.meta.com/">Meta Verified</a></p>
+</footer>
+<div>
   <p><a href="https://about.meta.com/">Português (Brasil)</a></p>
- </footer>
+  <p><a href="https://about.meta.com/">Meta Verified</a></p>
+</div>
+
   </body>
 </html>
-
-
-<!-- Meta
-Sobre
-Blog
-Carreiras
-Ajuda
-API
-Privacidade
-Termos
-Localizações
-Instagram Lite
-Threads
-Carregamento de contatos e não usuários
-Meta Verified
-Português (Brasil)
-
-Português (Brasil)
-© 2024 Instagram from Meta -->
